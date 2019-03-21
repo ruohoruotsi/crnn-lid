@@ -5,7 +5,7 @@ from itertools import cycle
 from keras.utils.np_utils import to_categorical
 from keras.engine.training import generator_queue
 
-from SpectrogramGenerator import SpectrogramGenerator
+from .SpectrogramGenerator import SpectrogramGenerator
 
 class DirectoryLoader(object):
 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     import scipy.misc
     a = DirectoryLoader("/Users/therold/Downloads/Speech Data/EU Speech", {"pixel_per_second": 50, "input_shape": [129, 100, 1], "batch_size": 32, "num_classes": 4}, shuffle=True)
-    print a.get_num_files()
+    print(a.get_num_files())
 
 
 

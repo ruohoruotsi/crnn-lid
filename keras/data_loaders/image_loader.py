@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.misc import imread
-from csv_loader import CSVLoader
+from .csv_loader import CSVLoader
 
 class ImageLoader(CSVLoader):
 
