@@ -4,34 +4,45 @@ english:
     - bbcnews
     - VOAvideo
   playlists:
-    -
+    - https://www.youtube.com/playlist?list=PL6XRrncXkMaXfrRjzAzIP8xMm42XlB_Ef
+    - https://www.youtube.com/playlist?list=PLS3XGZxi7cBXKYgusjlX5ku649o5jsz6u
 german:
   users:
     - deutschewelle
     - euronewsde
     - N24de
   playlists:
-    -
+    - https://www.youtube.com/playlist?list=PL93EFF128EB49BB1A
+    - https://www.youtube.com/playlist?list=PLdrKWT9w9Hg3eVswr9n01TODWrqS2KJE3
 french:
   users:
     - france24
   playlists:
-    -
+    - https://www.youtube.com/playlist?list=PLCnUnV3yCIYsA__fjUb1N6misxsn76CEe
+    - https://www.youtube.com/playlist?list=PLCnUnV3yCIYtgGZYt9FQV9Vvd0fgZcUPb
 spanish:
   users:
     - antena3noticias
     - rtve
   playlists:
-    -
+    - https://www.youtube.com/playlist?list=PL0PvQa8GV5JHPyNs5wDP3IhbAX81afJj3
+    - https://www.youtube.com/playlist?list=PLc6y_bIejLFGVo2pVApUrNL2txndFNVP6
 chinese:
   users:
     - VOAchina
   playlists:
-    -
+    - https://www.youtube.com/playlist?list=PL2CGrIfYxHqXKBIfHOn36jLHClWisbh-w
+    - https://www.youtube.com/playlist?list=PL2CGrIfYxHqURCE5jF5O7XmavjdPUb_rS
 russian:
   users:
     - Russia24TV
     - rtrussian
   playlists:
-    -
-
+    - https://www.youtube.com/playlist?list=PLLHjKKyQ4OaTGTtARr-SgEvff6qgMiGJV
+    - https://www.youtube.com/playlist?list=PLLHjKKyQ4OaSgA-ABFZ569F1mhHx7OwoN
+portuguese:
+  users:
+    - rtp
+  playlists:
+    - https://www.youtube.com/playlist?list=PLalUdvyXGNuURjuBrLVp6JhnT96tEkgrS
+    - https://www.youtube.com/playlist?list=PLalUdvyXGNuVGTpc68pXa4uvj0ZJI7Him

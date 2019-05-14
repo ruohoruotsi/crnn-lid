@@ -14,6 +14,7 @@ LABELS = {
     "spanish": 3,
     "chinese": 4,
     "russian": 5,
+    "portuguese": 6
 }
 
 

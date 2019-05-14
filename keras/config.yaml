@@ -1,6 +1,6 @@
-train_data_dir: "<path to dataset dir>/training.csv"
-validation_data_dir: "<path to dataset dir>/validation.csv"
-test_data_dir: "<path to dataset dir>/testing.csv"
+train_data_dir: "/Users/iorife/github/crnn-lid/data/youtube/segmented/images/training.csv"
+validation_data_dir: "/Users/iorife/github/crnn-lid/data/youtube/segmented/images/validation.csv"
+test_data_dir: "/Users/iorife/github/crnn-lid/data/youtube/segmented/images/testing.csv"
 
 batch_size: 128
 learning_rate: 0.001
@@ -10,16 +10,14 @@ data_loader: "ImageLoader"
 color_mode: "L"  # L = bw or RGB
 input_shape: [129, 500, 1]
 
-model: "topcoder_crnn_finetune" # _finetune"
+#model: "topcoder_crnn_finetune" # _finetune"
+model: "topcoder_crnn"
 
 segment_length: 10  # number of seconds each spectogram represents
 pixel_per_second: 50
 
-label_names: ["EN", "DE", "FR", "ES"]
-num_classes: 4
-
-# label_names: ["EN", "DE", "FR", "ES", "CN", "RUS"]
-# num_classes: 6
+label_names: ["EN", "DE", "FR", "ES", "CN", "RUS", "PT"]
+num_classes: 7
 
 
 

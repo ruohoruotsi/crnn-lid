@@ -1,6 +1,12 @@
-# This folder contains several scripts for getting and preparing training data
+# Scripts to obtain & prepare training data
 
-## Requirements
+### IORIFE requirements for retraining data-prep
+ * `pip install sox pydub`
+ * `$ python download_youtube.py --output ./youtube/`
+ * `$ python wav_to_spectrogram.py --source youtube/segmented/ --target youtube/segmented/images`
+
+
+## OLDER (incomplete) CRNN Requirements
 
 For downloading data you will need to install `Firefox` and further tools with `pip install -r requirements.txt`
 

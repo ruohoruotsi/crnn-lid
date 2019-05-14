@@ -13,9 +13,10 @@ from evaluate import evaluate
 from keras.callbacks import ModelCheckpoint, TensorBoard, CSVLogger, EarlyStopping
 from keras.optimizers import Adam, RMSprop, SGD
 
+
 def train(cli_args, log_dir):
 
-    config = load(open(cli_args.config, "rb"))
+    config = load(open(cli_args.config, "r"))
     if config is None:
         print("Please provide a config.")
 

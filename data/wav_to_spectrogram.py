@@ -31,7 +31,8 @@ def directory_to_spectrograms(args):
                  "french",
                  "spanish",
                  "chinese",
-                 "russian"]
+                 "russian",
+                 "portuguese"]
 
     generators = [SpectrogramGenerator(os.path.join(source, language), config, shuffle=False, run_only_once=True) for language in languages]
     generator_queues = [SpectrogramGen.get_generator() for SpectrogramGen in generators]

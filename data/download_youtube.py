@@ -28,16 +28,17 @@ def download(language, source, source_name, source_type):
     if source_type == "playlist":
         playlist_archive = os.path.join(output_path_raw, "archive.txt")
 
-        print "Downloading {0} {1} to {2}".format(source_type, source_name, output_path_raw)
-        command = """youtube-dl -i --download-archive {} --max-filesize 50m --no-post-overwrites --max-downloads {} --extract-audio --audio-format wav {} -o "{}/%(title)s.%(ext)s" """.format(
+        print("Downloading {0} {1} to {2}".format(source_type, source_name, output_path_raw))
+        command = """youtube-dl -i --download-archive {} --no-post-overwrites --max-downloads {} --extract-audio --audio-format wav {} -o "{}/%(title)s.%(ext)s" """.format(
             playlist_archive, args.max_downloads, source, output_path_raw)
         subprocess.call(command, shell=True)
     else:       
         if os.path.exists(output_path_raw):
-            print "skipping {0} because the target folder already exists".format(output_path_raw)
+            print("skipping {0} because the target folder already exists".format(output_path_raw))
         else:
-            print "Downloading {0} {1} to {2}".format(source_type, source_name, output_path_raw)
+            print("Downloading {0} {1} to {2}".format(source_type, source_name, output_path_raw))
             command = """youtube-dl -i --max-downloads {} --extract-audio --audio-format wav {} -o "{}/%(title)s.%(ext)s" """.format(args.max_downloads, source, output_path_raw)
+            print(command)
             subprocess.call(command, shell=True)
 
 
@@ -88,11 +89,11 @@ if __name__ == '__main__':
 
     sources = read_yaml("sources.yml")
     for language, categories in sources.items():
-        for user in categories["users"]:
-            if user is None:
-                continue
-                
-            download_user(language, user)
+        # for user in categories["users"]:
+        #     if user is None:
+        #         continue
+        #
+        #     download_user(language, user)
             
         for category in categories["playlists"]:
             if category is None:
@@ -104,4 +105,4 @@ if __name__ == '__main__':
 
     create_csv(os.path.join(args.output_path, "segmented"))
 
-    print file_counter
+    print(file_counter)
